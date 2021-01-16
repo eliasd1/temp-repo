@@ -1,6 +1,6 @@
-firstImage = document.querySelector("ul li")
-secondImage = document.querySelectorAll("ul li")[1]
-thirdImage = document.querySelectorAll("ul li")[2]
+firstImage = document.querySelector(".slideshow li")
+secondImage = document.querySelectorAll(".slideshow li")[1]
+thirdImage = document.querySelectorAll(".slideshow li")[2]
 p = document.getElementById("description")
 firstImage.addEventListener("animationstart", firstImageInfo)
 firstImage.addEventListener("animationiteration", firstImageInfo)
@@ -11,11 +11,11 @@ thirdImage.addEventListener("animationiteration", thirdImageInfo)
 
 
 function firstImageInfo(){
-    p.textContent = "First Image"
+    p.textContent = "First Text"
 }
 function secondImageInfo(){
-    p.textContent = "Second Image"
+    p.textContent = "Second Text"
 }
 function thirdImageInfo(){
-    p.textContent = "Third Image"
+    p.textContent = "Third Text"
 }
